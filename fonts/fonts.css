@@ -1,0 +1,304 @@
+@font-face {
+    font-family: 'Futura LT-EB';
+    src: url('FuturaLT-CondensedExtraBold.woff2') format('woff2'),
+        url('FuturaLT-CondensedExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura LT-Oblique';
+    src: url('FuturaLT-LightOblique.woff2') format('woff2'),
+        url('FuturaLT-LightOblique.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Futura LT-CondensedLight';
+    src: url('FuturaLT-CondensedLight.woff2') format('woff2'),
+        url('FuturaLT-CondensedLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura LT-Light';
+    src: url('FuturaLT-Light.woff2') format('woff2'),
+        url('FuturaLT-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato Thin';
+    src: url('Lato-Thin.woff2') format('woff2'),
+        url('Lato-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura LT Book';
+    src: url('FuturaLT-Book.woff2') format('woff2'),
+        url('FuturaLT-Book.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato Semibold';
+    src: url('Lato-Semibold.woff2') format('woff2'),
+        url('Lato-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato LightItalic';
+    src: url('Lato-LightItalic.woff2') format('woff2'),
+        url('Lato-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Lato Hairline';
+    src: url('Lato-Hairline.woff2') format('woff2'),
+        url('Lato-Hairline.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato Italic';
+    src: url('Lato-Italic.woff2') format('woff2'),
+        url('Lato-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Futura LT-CondExtraBoldObl';
+    src: url('FuturaLT-CondExtraBoldObl.woff2') format('woff2'),
+        url('FuturaLT-CondExtraBoldObl.woff') format('woff');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Futura LT-HeavyOblique';
+    src: url('FuturaLT-HeavyOblique.woff2') format('woff2'),
+        url('FuturaLT-HeavyOblique.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Futura LT-CondensedOblique';
+    src: url('FuturaLT-CondensedOblique.woff2') format('woff2'),
+        url('FuturaLT-CondensedOblique.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Futura LT-Bold';
+    src: url('FuturaLT-Bold.woff2') format('woff2'),
+        url('FuturaLT-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura LT-Heavy';
+    src: url('FuturaLT-Heavy.woff2') format('woff2'),
+        url('FuturaLT-Heavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato Light';
+    src: url('Lato-Light.woff2') format('woff2'),
+        url('Lato-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura LT-Condensed';
+    src: url('FuturaLT-Condensed.woff2') format('woff2'),
+        url('FuturaLT-Condensed.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato BlackItalic';
+    src: url('Lato-BlackItalic.woff2') format('woff2'),
+        url('Lato-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Futura LT-CondensedBoldOblique';
+    src: url('FuturaLT-CondensedBoldOblique.woff2') format('woff2'),
+        url('FuturaLT-CondensedBoldOblique.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Futura LT-Oblique';
+    src: url('FuturaLT-Oblique.woff2') format('woff2'),
+        url('FuturaLT-Oblique.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('Lato-Regular.woff2') format('woff2'),
+        url('Lato-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura LT-BookOblique';
+    src: url('FuturaLT-BookOblique.woff2') format('woff2'),
+        url('FuturaLT-BookOblique.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Lato Heavy';
+    src: url('Lato-Heavy.woff2') format('woff2'),
+        url('Lato-Heavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato HeavyItalic';
+    src: url('Lato-HeavyItalic.woff2') format('woff2'),
+        url('Lato-HeavyItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Lato Medium';
+    src: url('Lato-Medium.woff2') format('woff2'),
+        url('Lato-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura LT-BoldOblique';
+    src: url('FuturaLT-BoldOblique.woff2') format('woff2'),
+        url('FuturaLT-BoldOblique.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Lato Black';
+    src: url('Lato-Black.woff2') format('woff2'),
+        url('Lato-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura LT-CondensedBold';
+    src: url('FuturaLT-CondensedBold.woff2') format('woff2'),
+        url('FuturaLT-CondensedBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato HairlineItalic';
+    src: url('Lato-HairlineItalic.woff2') format('woff2'),
+        url('Lato-HairlineItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Lato SemiboldItalic';
+    src: url('Lato-SemiboldItalic.woff2') format('woff2'),
+        url('Lato-SemiboldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Lato MediumItalic';
+    src: url('Lato-MediumItalic.woff2') format('woff2'),
+        url('Lato-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Futura LT-ExtraBoldOblique';
+    src: url('FuturaLT-ExtraBoldOblique.woff2') format('woff2'),
+        url('FuturaLT-ExtraBoldOblique.woff') format('woff');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Lato Bold';
+    src: url('Lato-Bold.woff2') format('woff2'),
+        url('Lato-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura LT-CondensedLightObl';
+    src: url('FuturaLT-CondensedLightObl.woff2') format('woff2'),
+        url('FuturaLT-CondensedLightObl.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Futura LT';
+    src: url('FuturaLT.woff2') format('woff2'),
+        url('FuturaLT.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato ThinItalic';
+    src: url('Lato-ThinItalic.woff2') format('woff2'),
+        url('Lato-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Lato BoldItalic';
+    src: url('Lato-BoldItalic.woff2') format('woff2'),
+        url('Lato-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Futura LT ExtraBold';
+    src: url('FuturaLT-ExtraBold.woff2') format('woff2'),
+        url('FuturaLT-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+

@@ -1,0 +1,59 @@
+/* counter */
+#ps_counter {
+    width: 554px;
+    margin: 0 auto;
+}
+
+.ps_countdown_wrap {
+    width: 580px;
+    margin: 10px auto;
+    border: 1px solid #CCC;
+    background: #fff;
+    color: #000;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    padding: 20px 20px 2px;
+    float: none;
+    clear: both;
+}
+
+.cntSeparator {
+    margin: 10px 11px;
+    font: 54px/54px Georgia, "Times New Roman", Times, serif;
+}
+
+.ps_counter_desc {
+    clear: both;
+    margin: 10px auto;
+    width: 554px;
+    overflow: hidden;
+    float: none;
+}
+
+.ps_counter_desc div {
+    float: left;
+    width: 105px;
+    margin: 0 39px 0 0;
+    font: 26px/40px arial;
+    text-align: center;
+}
+
+.ps_counter_desc div:last-child {
+    margin: 0 !important;
+}
+/* counter */
+
+
+.ps_countdown_wrap {
+    width: 580px;
+    margin: 0;
+    border: none;
+    background: none;
+    color: #000;
+    border-radius: 0;
+    padding: 0;
+    float: none;
+    clear: both;
+    transform: scale(0.8);
+}
