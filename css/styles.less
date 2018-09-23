@@ -542,6 +542,9 @@ section, footer {
 			z-index: -1;
 		}
 	}
+	.singleplayer-mobile {
+		display: none;
+	}
 	.singleplayer-info {
 		width: 35%;
 		position: relative;
@@ -749,6 +752,8 @@ footer {
 
 .tech-bg {
 	background: url('../img/tech-bg.png') no-repeat center center;
+	-webkit-background-size: cover;
+	background-size: cover;
 	.intro-text  {
 		h2 {
 			margin: 0 auto;
@@ -788,6 +793,15 @@ footer {
 .tech__arena {
 	padding: 50px 0 0;
 	background-image: linear-gradient(to bottom, #072959 0%, #0d1b2e 100%);
+	.block-rel {
+		position: relative;
+	}
+	.rel-control-unit,.rel-vr-equip {
+		top: -130px;
+	}
+	.rel-vr-exp {
+		top: -70px;
+	}
 	.width-content {
 		display: -webkit-flex;
 		display: -moz-flex;
@@ -848,7 +862,6 @@ footer {
 
 .tect__arena-unit {
 	.tech__arena;
-	// padding: 150px 0 100px;
 	background-color: #0d1b2e;
 	background-image: none;
 }
@@ -867,7 +880,6 @@ footer {
 .tech__experience {
 	position: relative;
 	.tech__control-unit;
-	// padding: 200px 0 300px;
 	background-image: linear-gradient(to bottom, #0d1b2e 10%, #000000 100%);
 	.block-info {
 		width: 30%;
@@ -884,9 +896,10 @@ footer {
 	}
 }
 
-// .block-info__content {
-// 	margin-top: 100px;
-// }
+.experience-mobile {
+	display: none;
+}
+
 
 section.tech__arena, section.tech__arena-unit {
 	padding: 0;
@@ -935,6 +948,8 @@ section.tech__arena, section.tech__arena-unit {
 
 .order-bg {
 	background: url('../img/order-bg.png') no-repeat center center;
+	-webkit-background-size: cover;
+	background-size: cover;
 	.intro-text  {
 		h2 {
 			margin: 0 auto;
@@ -1170,7 +1185,7 @@ section.tech__arena, section.tech__arena-unit {
 	}
 
 	footer .footer-cta { 
-		padding: 150px 0 100px;
+		padding: 200px 0 50px;
 	}
 	.main__space .space-bg img {
 		max-width: 100%;
@@ -1237,9 +1252,13 @@ section.tech__arena, section.tech__arena-unit {
 			}
 		}
 	}
-	.order__about-arena .about-arena__benefits .benefit-block {
-		width: 50%;
+	.order__about-arena .about-arena__benefits .benefit-block .benefit-block__content {
+		width: 100%;
 	}
+	// .order__about-arena .about-arena__benefits .benefit-block .benefit-block__content .benefit-img img {
+	// 	left: 50%;
+	// 	transform: translateX(-50%);
+	// }
 	.order__facts .width-content .fact-block {
 		width: 100%;
 		.fact-heading {
@@ -1259,11 +1278,17 @@ section.tech__arena, section.tech__arena-unit {
 	section.tech__arena .resp-height, section.tech__arena-unit .resp-height {
 		height: 650px;
 	}
+	.tech__control-unit, .tech__equipment, .tech__experience {
+		padding: 50px 0;
+		.block-info {
+			height: 300px;
+		}
+	} 
 }
 
 @media screen and (max-width: 992px) {
 	.tech__arena .block-info, .tect__arena-unit .block-info, {
-		height: 600px;
+		height: 660px;
 	}
 	.tech__control-unit .block-info, .tech__equipment .block-info, .tech__experience .block-info {
 		height: 250px;
@@ -1274,29 +1299,6 @@ section.tech__arena, section.tech__arena-unit {
 	.main__arena {
 		padding: 0 0 500px;
 	}
-
-	.main__about-arena, .order__about-arena {
-		padding: 100px 0 50px;
-		.about-arena__benefits {
-			.benefit-block {
-				width: 50%;
-				margin: 30px 0;
-				min-height: 190px;
-				.benefit-block__content {
-					text-align: center;
-					.benefit-img img {
-						position: static;
-					}
-				}
-			}
-		} 
-	}
-	.main__multiplayer .width-content .multiplayer-info .multiplayer-content__block .multiplayer-content {
-		width: 50%;
-	}
-	.main__singleplayer .width-content .singleplayer-info .singleplayer-content__block .singleplayer-content {
-		width: 50%;
-	}
 	.main__intro .intro-text {
 		margin: 40% auto 0;
 	}
@@ -1306,8 +1308,11 @@ section.tech__arena, section.tech__arena-unit {
 }
 
 @media screen and (max-width: 768px) {
+	.tech__info-video:after {
+		display: none;
+	}
 	.main__multiplayer .multiplayer-info .multiplayer-info__heading h3, .main__singleplayer .singleplayer-info .singleplayer-info__heading h3, .main__space .space-text h3 {
-		font-size: 48px;
+		font-size: 44px;
 	}
 	.main__multiplayer, .main__singleplayer {
 		padding: 60px 0;
@@ -1322,9 +1327,9 @@ section.tech__arena, section.tech__arena-unit {
 	}
 	footer .footer-cta .footer-cta__text {
 		button {
-			font-size: 21px;
-			width: 35%;
-			height: 55px;
+			font-size: 22px;
+			width: 50%;
+			height: 60px;
 		}
 		h2 {
 			font-size: 42px;
@@ -1336,19 +1341,6 @@ section.tech__arena, section.tech__arena-unit {
 	.main__intro .intro-text button {
 		font-size: 24px;
 		height: 55px;
-	}
-	.main__menu {
-		-webkit-flex-direction: column;
-		-moz-flex-direction: column;
-		-ms-flex-direction: column;
-		-o-flex-direction: column;
-		flex-direction: column;
-		justify-content: center;
-		-ms-align-items: center;
-		align-items: center;
-		.menu-list {
-			margin-top: 20px;
-		}
 	}
 	.tech__grim, .tech__attek {
 		padding: 240px 0 50px;
@@ -1362,11 +1354,231 @@ section.tech__arena, section.tech__arena-unit {
 	.main__arena img {
 		width: 98%;
 	}
+	.menu-logo, .menu-list {
+		max-width: 45%;
+		img, ul {
+			width: 100%;
+		}
+	}
+	.main__intro .intro-text h2 {
+		font-size: 36px;
+	}
+	.main__intro {
+		height: auto;
+		position: relative;
+		&:after {
+			display: block;
+		    content: "";
+		    height: 150px;
+		    width: 100%;
+		    position: absolute;
+		    left: 0;
+		    bottom: 0;
+		    background: linear-gradient(to bottom, transparent 5%, #072959 100%);
+		    z-index: -1;
+		}
+	}
+	.main__info-video:after {
+		display: none;
+	}
+	.main-bg-paralax {
+		height: 100%;
+	}
+	.main__intro .intro-text button {
+		margin-top: 20px;
+		font-size: 18px;
+		height: 45px;
+		width: 60%;
+	}
+	.main__intro-block {
+		display: none;
+	}
+	.main__intro .intro-text {
+		margin: 30% auto 0;
+	}
+	.main__menu {
+		-webkit-flex-direction: row;
+		-moz-flex-direction: row;
+		-ms-flex-direction: row;
+		-o-flex-direction: row;
+		flex-direction: row;
+		.menu-logo {
+			img {
+				width: 180px;
+			}
+		}
+	}
+	.main__intro .main__menu ul li a {
+		font-size: 13px;
+	}
+	.main__intro .main__menu ul .menu-button {
+		padding: 5px;
+		font-size: 14px;
+		width: 120px;
+	}
+	.main__menu .menu-list {
+		margin-top: 0;
+	}
+	.main__info-video .info-video__text {
+		font-size: 20px;
+		p:first-child {
+			color: #b7b7b7;
+		}
+	}
+	.main__arena h3 {
+		font-size: 37px;
+	}
+	.main__about-arena h3 {
+		margin-top: 0;
+		padding-top: 26%;
+		font-size: 40px;
+	}
+	.main__about-arena .about-arena__img {
+		right: -15%;
+	}
+	.main__about-arena .about-arena__benefits .benefit-block {
+		width: 25%;
+	}
+	.main__about-arena .about-arena__benefits .benefit-block .benefit-block__content {
+		width: 100%;
+		p {
+			font-size: 16px;
+		}
+	} 
+
+	.main__about-arena .about-arena__benefits .benefit-block .benefit-block__content .benefit-img img, .order__about-arena .about-arena__benefits .benefit-block .benefit-block__content .benefit-img img {
+		transform: scale(0.8);
+	}
+	.main__about-arena .about-arena__benefits .benefit-block {
+		min-height: 170px;
+	}
+	.main__about-arena .about-arena__paralax {
+		height: auto;
+	}
+	.main__about-arena .about-arena__benefits {
+		padding-top: 50px;
+	}
+	.main__multiplayer .multiplayer-info .multiplayer-content__block .multiplayer-content, .main__singleplayer .singleplayer-info .singleplayer-content__block .singleplayer-content {
+		height: auto;
+	}
+	.main__multiplayer .width-content .multiplayer-info .multiplayer-content__block .multiplayer-content, .main__singleplayer .width-content .singleplayer-info .singleplayer-content__block .singleplayer-content {
+		width: 23%;
+		padding: 0;
+	}
+	footer .footer-cta .footer-cta__text .footer-cta__text-block {
+		left: 0;
+		transform: none;
+	}
+	.main__multiplayer .multiplayer-info .multiplayer-content__block .multiplayer-content p, .main__singleplayer .singleplayer-info .singleplayer-content__block .singleplayer-content p {
+		font-size: 19px;
+	}
+	.mobile-none {
+		display: none;
+	}
+	.main__singleplayer .singleplayer-mobile {
+		display: block;
+	}
+	.experience-mobile {
+		display: block;
+	}
+	.tech__control-unit .rel-control-unit, .tech__experience .rel-vr-exp, .tech__equipment .rel-control-unit, .tech__equipment .rel-vr-equip {
+		top: 0;
+	}
+	.tech__experience {
+		.width-content {
+			max-width: 100%;
+		}
+		.block-info {
+			max-width: 90%;
+			margin: 0 auto;
+		}
+	}
+	.tech__arena .block-info, .tect__arena-unit .block-info, section.tech__arena .resp-height, section.tech__arena-unit .resp-height, .tech__control-unit .block-info, .tech__equipment .block-info, .tech__experience .block-info {
+		height: auto;
+		padding: 20px 0;
+	}
+	.tech__grim .block-content img, .tech__attek .block-content img {
+		width: 60%;
+	}
+	.order__about-arena .about-arena__benefits .benefit-block .benefit-block__content p {
+		font-size: 16px;
+	}
+	.order__about-arena .about-arena__benefits .benefit-block {
+		min-height: 170px;
+	}
+	.tech__grim {
+		background: url('../img/grim-helm-mobile.jpg') no-repeat center center;
+		-webkit-background-size: cover;
+		background-size: cover;
+	}
+	.tech__attek {
+		background: url('../img/attek-bg-mobile.jpg') no-repeat center center;
+		-webkit-background-size: cover;
+		background-size: cover;
+	}
 }
+
+@media screen and (max-width: 600px) {
+	.main__about-arena .about-arena__benefits .benefit-block .benefit-block__content .benefit-img img {
+		transform: none;
+		max-width: 85px;
+		max-height: 80px;
+	}
+	.main__about-arena .about-arena__benefits .benefit-block .benefit-block__content p {
+		font-size: 14px;
+	}
+	.main__multiplayer .multiplayer-info .multiplayer-content__block .multiplayer-content p, .main__singleplayer .singleplayer-info .singleplayer-content__block .singleplayer-content p {
+		font-size: 16px;
+	}
+	footer .footer-cta .footer-cta__text h2 {
+		font-size: 32px;
+	}
+	footer .footer-cta .footer-cta__text button {
+		font-size: 17px;
+		height: 42px;
+		width: 45%;
+	}
+	.main__multiplayer .width-content .multiplayer-info .multiplayer-content__block .multiplayer-content:first-child, .main__singleplayer .width-content .singleplayer-info .singleplayer-content__block .singleplayer-content:first-child {
+		padding-right: 10px;
+	}
+	.main__multiplayer .width-content .multiplayer-info .multiplayer-content__block .multiplayer-content:nth-child(2), .main__singleplayer .width-content .singleplayer-info .singleplayer-content__block .singleplayer-content:nth-child(2) {
+		padding: 0 5px;
+	}
+	.main__multiplayer .width-content .multiplayer-info .multiplayer-content__block .multiplayer-content:nth-child(3), .main__singleplayer .width-content .singleplayer-info .singleplayer-content__block .singleplayer-content:nth-child(3) {
+		padding: 0 5px;
+	}
+	.main__multiplayer .width-content .multiplayer-info .multiplayer-content__block .multiplayer-content:last-child, .main__singleplayer .width-content .singleplayer-info .singleplayer-content__block .singleplayer-content:last-child {
+		padding-left: 10px;
+	}
+	footer .footer-cta .footer-cta__text {
+		height: auto;
+	}
+	.main__arena {
+		padding: 0 0 400px;
+	}
+	.order__about-arena .about-arena__benefits .benefit-block .benefit-block__content .benefit-img img {
+		transform: none;
+	    max-width: 85px;
+	    max-height: 80px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.main__arena {
+		padding: 0 0 350px;
+	}
+	.main__arena h3 {
+		font-size: 32px;
+	}
+	.order__about-arena .about-arena__benefits .benefit-block .benefit-block__content .benefit-img img {
+		bottom: -70px;
+	}
+}
+
 
 @media screen and (max-width: 480px) {
 	.main__intro .intro-text h2 {
-		font-size: 40px;
+		font-size: 23px;
 	}
 	.main__intro .intro-text button {
 		font-size: 20px;
@@ -1381,18 +1593,21 @@ section.tech__arena, section.tech__arena-unit {
 	.main__multiplayer .multiplayer-info .multiplayer-content__block .multiplayer-content {
 		height: auto;
 	}
-	.main__arena h3 {
-		font-size: 40px;
-	}
 	.main__about-arena h3 {
-		font-size: 34px;
+		font-size: 28px;
 	}
 	.main__multiplayer .multiplayer-info .multiplayer-info__heading h3, .main__singleplayer .singleplayer-info .singleplayer-info__heading h3, .main__space .space-text h3 {
 		font-size: 40px;
 	}
 
 	.main__about-arena .about-arena__benefits .benefit-block, .order__about-arena .about-arena__benefits .benefit-block {
-		width: 100%;
+		// width: 50%;
+		text-align: center;
+		margin: 25px 0;
+	}
+	.main__about-arena .about-arena__benefits .benefit-block .benefit-block__content .benefit-img img {
+		left: 50%;
+		transform: translateX(-50%;);
 	}
 	.main__multiplayer .multiplayer-info .multiplayer-info__heading h3:before, .main__singleplayer .singleplayer-info .singleplayer-info__heading h3:before, .main__space .space-text h3:before, .heading-underline:before {
 		width: 90%;
@@ -1427,27 +1642,56 @@ section.tech__arena, section.tech__arena-unit {
 	.tech__grim, .tech__attek {
 		padding: 100px 0 40px;
 	}
-	section.tech__arena .resp-height, section.tech__arena-unit .resp-height, .tech__arena .block-info, .tect__arena-unit .block-info, {
-		height: 800px;
+	.main__intro .main__menu ul li {
+		margin: 0 2px;
 	}
-	.tech__control-unit .block-info, .tech__equipment .block-info {
-		height: 400px;
+	.main__about-arena .about-arena__benefits .benefit-block .benefit-block__content .benefit-img img {
+	    max-width: 60px;
+	    max-height: 65px;
 	}
-	.tech__experience .block-info {
-		height: 450px;
+	.menu-logo {
+		max-width: 50%;
+	}
+	.menu-list {
+		max-width: 60%;
+		width: 60%;
+	}
+	.main__menu .menu-logo img {
+		width: 130px;
+	}
+	.main__multiplayer .multiplayer-info .multiplayer-content__block .multiplayer-content p, .main__singleplayer .singleplayer-info .singleplayer-content__block .singleplayer-content p {
+		font-size: 12px;
+	}
+	.main__about-arena .about-arena__img {
+		right: 0;
+	}
+	.main__about-arena .about-arena__benefits .benefit-block .benefit-block__content .benefit-img img {
+		bottom: -60px;
+	}
+	.main__multiplayer .multiplayer-info .multiplayer-content__block .multiplayer-content .content-img img, .main__singleplayer .singleplayer-info .singleplayer-content__block .singleplayer-content .content-img img {
+		max-width: 70px;
+	}
+	.main__space {
+		padding: 60px 0;
+	}
+	.tech__grim .block-content, .tech__attek .block-content {
+		font-size: 17px;
+	}
+	.order__about-arena .about-arena__benefits .benefit-block .benefit-block__content .benefit-img img {
+		max-width: 60px;
+   		max-height: 65px;
+   		left: 50%;
+   		transform: translateX(-50%);
+	}
+	.order__about-arena .about-arena__benefits .benefit-block .benefit-block__content p {
+		font-size: 14px;
 	}
 }
 
 
 @media screen and (max-width: 360px) {
 	.main__intro .intro-text h2 {
-		font-size: 32px;
-	}
-	// .main__arena {
-	// 	padding: 0 0 200px;
-	// }
-	.main__multiplayer .multiplayer-info .multiplayer-content__block .multiplayer-content p {
-		font-size: 16px;
+		font-size: 23px;
 	}
 	footer {
 		padding: 0;
@@ -1455,7 +1699,49 @@ section.tech__arena, section.tech__arena-unit {
 	.copyright-text p {
 		margin: 0;
 	}
-	.main__singleplayer .singleplayer-info .singleplayer-content__block .singleplayer-content p {
+	footer .footer-cta .footer-cta__text h2 {
+		font-size: 26px;
+	}
+	footer .footer-cta .footer-cta__text button {
+		font-size: 15px;
+		height: 40px;
+	}
+	footer .footer-cta.footer-tech .footer-cta__text button {
+		font-size: 13px;
+	}
+	.main__intro .main__menu ul .menu-button {
+		width: 90px;
+		font-size: 11px;
+		padding: 5px;
+	}
+	.main__intro .main__menu ul {
+		justify-content: flex-end;
+	}
+	.main__about-arena .about-arena__benefits .benefit-block, .order__about-arena .about-arena__benefits .benefit-block {
+		padding: 3px;
+	}
+	.main__multiplayer .multiplayer-info .multiplayer-content__block .multiplayer-content p, .main__singleplayer .singleplayer-info .singleplayer-content__block .singleplayer-content p {
+		font-size: 10px;
+	}
+	.main__multiplayer .multiplayer-info .multiplayer-info__heading h3, .main__singleplayer .singleplayer-info .singleplayer-info__heading h3, .main__space .space-text h3 {
+		font-size: 34px;
+	}
+	.main__info-video .info-video__text {
 		font-size: 16px;
+	}
+	.main__menu .menu-logo img {
+		width: 115px;
+	}
+	.main__intro .main__menu ul .menu-button {
+		width: 80px;
+    	font-size: 10px;
+    	padding: 0;
+	}
+	.order__about-arena .about-arena__benefits .benefit-block .benefit-block__content p, .main__about-arena .about-arena__benefits .benefit-block .benefit-block__content p {
+		font-size: 12px;
+	}
+	.main__intro .intro-text button {
+		font-size: 16px;
+    	height: 40px;
 	}
 }
